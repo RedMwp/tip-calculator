@@ -17,7 +17,7 @@
         <div class="form">
             <form onsubmit="submit()">
                 <label for="bill">bill</label>
-                <input type="text" id="bill" placeholder="bill" required/>
+                <input type="number" id="bill" placeholder="bill" required/>
                 <div class="tip-content">
                     <p>Select Tip %</p>
                     <input type="button" value="5%" id="five">
@@ -25,10 +25,10 @@
                     <input type="button" value="15%" id="f-teen">
                     <input type="button" value="25%" id="t-five">
                     <input type="button" value="50%" id="f-ty">
-                    <input type="text" id="custom" placeholder="custom"/>
+                    <input type="number" id="custom" placeholder="custom"/>
                 </div>
                 <label for="number-of-people">number of people</label>
-                <input type="text" placeholder="number of people" id="number-of-people" value="1"/>
+                <input type="number" placeholder="number of people" id="number-of-people" value="1"/>
             </form>
         </div>
         <div class="display">
@@ -46,7 +46,7 @@
                 </h2>
                 <h1>$ <i id="total-amount">20</i></h1>
             </div>
-            <button id="submit">calculate</button>
+            <button id="submit">RESET</button>
         </div>
     </section>
 </main>

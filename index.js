@@ -68,6 +68,7 @@ function clearBg(elem1,elem2,elem3,elem4){
     elem2.style.background='hsl(183, 100%, 15%)';
     elem3.style.background='hsl(183, 100%, 15%)';
     elem4.style.background='hsl(183, 100%, 15%)';
+    
 }
 
 customTip.onchange = changeBtn;
@@ -91,5 +92,18 @@ function calculateTip(){
     tipAmount.innerHTML= parseFloat(tT).toFixed(2);
     
 }
-button.onclick = calculateTip;
+
+function reset(){
+    bill.value='';
+    customTip.value='';
+    five.style.background = 'hsl(183, 100%, 15%)';
+    fTy.style.background = 'hsl(183, 100%, 15%)';
+    tFive.style.background = 'hsl(183, 100%, 15%)';
+    fTeen.style.background = 'hsl(183, 100%, 15%)';
+    ten.style.background = 'hsl(183, 100%, 15%)';
+    button.style.background='hsl(186, 14%, 43%)';
+    numberOfPeople.value='1'
+}
+
+button.onclick = reset;
 setInterval(calculateTip,1000)
