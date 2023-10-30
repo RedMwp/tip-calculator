@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+<header>
+    <h1>Tip<br>Calcurator</h1>
+</header>
+<main>
+    <section class="container">
+        <div class="form">
+            <form onsubmit="submit()">
+                <label for="bill">bill</label>
+                <input type="text" id="bill" placeholder="bill" required/>
+                <div class="tip-content">
+                    <p>Select Tip %</p>
+                    <input type="button" value="5%" id="five">
+                    <input type="button" value="10%" id="ten">
+                    <input type="button" value="15%" id="f-teen">
+                    <input type="button" value="25%" id="t-five">
+                    <input type="button" value="50%" id="f-ty">
+                    <input type="text" id="custom" placeholder="custom"/>
+                </div>
+                <label for="number-of-people">number of people</label>
+                <input type="text" placeholder="number of people" id="number-of-people" value="1"/>
+            </form>
+        </div>
+        <div class="display">
+            <div class="tipamount">
+                <h2>
+                    tip amount
+                    <p>/person</p>
+                </h2>
+                <h1>$ <i id="tip-amount">20</i></h1>
+            </div>
+            <div class="tipamount">
+                <h2>
+                    total
+                    <p>/person</p>
+                </h2>
+                <h1>$ <i id="total-amount">20</i></h1>
+            </div>
+            <button id="submit">calculate</button>
+        </div>
+    </section>
+</main>
+<script src="index.js"></script>
+</body>
+
+</html>

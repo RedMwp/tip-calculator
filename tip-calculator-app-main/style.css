@@ -1,0 +1,179 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.active{
+    background: red;
+}
+body{
+  font-size: 15px;
+  margin: 0 auto;
+  background:hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: hsl(183, 100%, 15%);
+  opacity: .8;
+}
+section{
+  width: 80%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.container{
+  display:flex ;
+  justify-content: center;
+  height: 310px;
+  align-items: center;
+  background: #fff;
+  padding: 10px 4px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  
+  
+}
+.display{
+  background: hsl(183, 100%, 15%);
+  padding: 1em;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+.display p{
+  font-size: 15px;
+  text-transform: lowercase;
+}
+.display h2{
+  text-transform: capitalize;
+  color:hsl(185, 41%, 84%)
+}
+.display h1, .display i{
+  color: hsl(172, 67%, 45%);
+  font-weight: 900;
+  font-style: normal;
+}
+.tipamount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display button{
+  height: 36px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: hsl(186, 14%, 43%);
+  color: hsl(183, 100%, 15%);
+}
+
+.form{
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form input[type=text]{
+  background: hsl(185, 41%, 84%);
+  width: 100%;
+  height: 36px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  font-weight: 700;
+  color:hsl(183, 100%, 15%);
+  margin: 10px 0px;
+}
+form input[type=text]:focus{
+  font-size: 16px;
+}
+
+#bill{
+  background: url('images/icon-dollar.svg') hsl(185, 41%, 84%)    no-repeat;
+  background-position: left center;
+  text-align: right;
+}
+#number-of-people{
+  background: url('images/icon-person.svg') no-repeat;
+  background-position: left center;
+  text-align: right;
+}
+form input[type=button]{
+  background:hsl(183, 100%, 15%);
+  width:80px;
+  height: 36px;
+  border-radius: 6px;
+  margin: 5px 5px;
+  color: hsl(189, 41%, 97%);
+  font-weight: 700;
+  font-size: 18px;
+  transition: .4s ease-in-out;
+}
+form input[type=button]:hover{
+  background:hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+form label{
+  text-transform: capitalize;
+  color:hsl(183, 100%, 15%);
+  opacity: .7;
+}
+.tip-content input[type=text]{
+  width: 100px;
+  padding: 0px 7px;
+}
+.tip-content p{
+  color: hsl(183, 100%, 15%);
+  opacity: .7;
+  margin: 10px 0px;
+}
+@media (max-width:800px){
+  section{
+  width: 100%;
+  }
+  .container{
+    flex-direction: column;
+    height: auto;
+  }
+  .form{
+    width: 95%;
+    max-width: 400px;
+  }
+  form input[type=button] , .tip-content input[type=text]{
+    width: 40%;
+  }
+  .tip-content input[type=text]{
+    width: 40%;
+    margin: 5px;
+  }
+  .display{
+    width: 95%;
+    max-width: 400px;
+    height: 300px;
+  }
+}
+
+
